@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>Flex practice</title>
+
+<head>
+    <style>
+    .main {
+            margin: 30px;
+            height: 200px;
+            width: 200px;
+        }
+        
+        .box2 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            height: 60px;
+            border: solid;
+            border-color: gray;
+            justify-content: space-between;
+            align-items: stretch;
+            margin-bottom: 20px;
+        }
+        
+        .ver {
+            display: flex;
+        }
+        
+        .hor {
+            border: solid;
+            border-width: 1px;
+            flex: 1;
+            height: 50px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;
+    flex-direction: row">
+        <div style="background-color:lightblue;
+        flex: 1;">
+            div1
+        </div>
+        <div style="background-color: lightpink;
+        flex: 1;">
+            div2
+        </div>
+    </div>
+    <div class="box2">
+        <div style="background-color:lightpink;
+        width:100px;">
+            div1
+        </div>
+        <div style="background-color: lightblue;
+       flex: 1;">
+            div2
+        </div>
+        <div style="background-color: lightpink;
+        width:100px;">
+            div2
+        </div>
+    </div>
+    <br />
+    <div class="main">
+        <div class="ver">
+            <div class="hor">A</div>
+            <div class="hor">B</div>
+        </div>
+        <div class="ver">
+            <div class="hor">C</div>
+            <div class="hor">D</div>
+        </div>
+        <div class="ver">
+            <div class="hor">E</div>
+            <div class="hor">F</div>
+        </div>
+        <div class="ver">
+            <div class="hor">G</div>
+            <div class="hor">H</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="ver">
+            <div class="hor">A</div>
+            <div class="hor">B</div>
+        </div>
+        <div class="ver">
+            <div class="hor">
+                <center>C</center>
+            </div>
+        </div>
+        <div class="ver">
+            <div class="hor">D</div>
+            <div class="hor">E</div>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="ver">
+            <div class="hor" style="flex: 1;">A</div>
+            <div class="hor" style="flex: 3;">B</div>
+        </div>
+        <div class="ver">
+            <div class="hor" style="flex: 3;">C</div>
+            <div class="hor" style="flex: 1;">D</div>
+        </div>
+        <div class="ver">
+            <div class="hor">E</div>
+            <div class="hor">F</div>
+            <div class="hor">G</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="ver">
+            <div class="hor">
+                <div style="flex: 1;">A</div>
+                <div style="flex: 3;">B</div>
+            </div>
+            <div class="hor">
+                <div style="flex: 1;">C</div>
+            </div>
+        </div>
+        <div class="ver">
+            <div class="hor">D</div>
+        </div>
+    </div>
+</body>
+
+</html>
